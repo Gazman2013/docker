@@ -1,0 +1,99 @@
+ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dear                                                                                                                                                             mor -o /usr/share/keyrings/docker-archive-keyring.gpg
+  310  docker --version
+  311  echo   "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyr                                                                                                                                                             ing.gpg] https://download.docker.com/linux/ubuntu \
+  312    $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.li                                                                                                                                                             st > /dev/null
+  313  docker --version
+  314  apt update
+  315  apt-get install docker-ce docker-ce-cli containerd.io
+  316  docker --version
+  317  docker ps -a
+  318  docker run - it ubuntu /bin/bash
+  319  docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 2                                                                                                                                                             ; done"
+  320  docker ps
+  321  docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 2                                                                                                                                                             ; done"
+  322  docker ps
+  323  docker logs
+  324  docker logs --help
+  325  docker ps
+  326  docker logs peaceful_swanson
+  327  docker stop peaceful_swanson
+  328  docker ps
+  329  docker stop 52b3cd0c232f
+  330  docker ps -a -q
+  331  docker images -a
+  332  docker run -d -P training/webapp python app.py
+  333  docker ps
+  334  ps -l
+  335  docker ps -l
+  336  netstat -atnp
+  337  netstat -antp
+  338  docker ps
+  339  docker stop exciting_khayyam
+  340  docker run -d -P 80:5000 training/webapp python app.py
+  341  docker run -d -p 80:5000 training/webapp python app.py
+  342  docker ps
+  343  curl localhost:80
+  344  docker port e88879123990
+  345  docker logs
+  346  docker logs busy_pascal
+  347  curl localhost:80
+  348  docker logs busy_pascal
+  349  docker top busy_pascal
+  350  docker inspect busy_pascal
+  351  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end                                                                                                                                                             }}' cranky_agnesi
+  352  docker inspect busy_pascal
+  353  docker inspect -f '{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end                                                                                                                                                             }}'  busy_pascal
+  354  docker stop busy_pascal
+  355  docker start busy_pascal
+  356  docker stop busy_pascal
+  357  docker rm busy_pascal
+  358  dcoker ps
+  359  docker ps
+  360  docker images
+  361  docker search node
+  362  docker search ubuntu
+  363  docker run -ti ubuntu:16.04 /bin/bash
+  364  docker images
+  365  docker pull centos
+  366  docker run -it centos /bin/bash
+  367  docker imanges
+  368  docker images
+  369  docker seach sinatra
+  370  docker search sinatra
+  371  docker pull training/sinatra
+  372  dcoker run -it training/sinatra /bin/bash
+  373  docker run -it training/sinatra /bin/bash
+  374  docker ps
+  375  docker run -it training/sinatra /bin/bash
+  376  docker commit -m "change" -a "Rodionov" 18eddcbccb3b levelup/sinatra:v2
+  377  docker image
+  378  docker images
+  379  docker run -it levelup/sinatra:v2 /bin/bash
+  380  cd /home
+  381  mkdir sinatra
+  382  ls -la
+  383  cd sinatra/
+  384  touch Dockerfile
+  385  nano Dockerfile
+  386  docker build -t levelup/sinatra:v2 .
+  387  nano Dockerfile
+  388  docker build -t levelup/sinatra:v2 .
+  389  nano Dockerfile
+  390  docker build -t levelup/sinatra:v2 .
+  391  nano Dockerfile
+  392  docker build -t levelup/sinatra:v2 .
+  393  docker images
+  394  docker run -it levelup/sinatra:v2 /bin/bash
+  395  dicker images
+  396  docker images
+  397  docker images tag 0104b07f4248 levelup/sinatra:v3
+  398  cd /va/lib/docker
+  399  cd /var/lib/docker
+  400  ls -la
+  401  cd image/
+  402  ls
+  403  cd overlay2/
+  404  ls
+  405  cd imagedb/
+  406  ls
+  407  history
