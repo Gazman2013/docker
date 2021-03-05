@@ -1,8 +1,8 @@
 # docker
 1. Зарегестрироваться на Gitlab до следующего занятия. https://gitlab.com/rodionov.gazman2013
-2. Создать свой собственный образ через Dockerfile.
+2. Создать свой собственный образ через Dockerfile.https://github.com/Gazman2013/docker
 3. Запушить его на DockerHub и прислать ссылку для скачивания в общий чат. https://hub.docker.com/repository/docker/gazman2013/docker_test
-4. Узнать, может ли запускаться контейнер внутри контейнера
+4. Узнать, может ли запускаться контейнер внутри контейнера. Можно
 
 1.  docker run -ti debian:10 /bin/bash
 36f29589aef
